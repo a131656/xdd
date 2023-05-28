@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Mrs4s/go-cqhttp/cmd/gocq"
-	"github.com/Mrs4s/go-cqhttp/coolq"
+	"github.com/Mrs4s/go-cqhttp/tree/master/cmd/gocq"
+	"github.com/Mrs4s/go-cqhttp/tree/master/coolq"
 	"io/ioutil"
 	"os"
 	"strings"

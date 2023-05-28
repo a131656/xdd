@@ -95,21 +95,21 @@ func (ck *JdCookie) Query() string {
 		cookie := fmt.Sprintf("pt_key=%s;pt_pin=%s;", ck.PtKey, ck.PtPin)
 		var rpc = make(chan []RedList)
 		var fruit = make(chan string)
-		var pet = make(chan string)
+		//var pet = make(chan string)
 		var gold = make(chan int64)
-		var egg = make(chan int64)
+		//var egg = make(chan int64)
 		//var tyt = make(chan string)
-		var mmc = make(chan int64)
-		var zjb = make(chan int64)
+		//var mmc = make(chan int64)
+		//var zjb = make(chan int64)
 		//var xgc = make(chan string)
 		go redPacket(cookie, rpc)
 		go initFarm(cookie, fruit)
-		go initPetTown(cookie, pet)
+		//go initPetTown(cookie, pet)
 		go jsGold(cookie, gold)
-		go jxncEgg(cookie, egg)
+		//go jxncEgg(cookie, egg)
 		//go tytCoupon(cookie, tyt)
-		go mmCoin(cookie, mmc)
-		go jdzz(cookie, zjb)
+		//go mmCoin(cookie, mmc)
+		//go jdzz(cookie, zjb)
 		//go jxgc(cookie, xgc)
 		today := time.Now().Local().Format("2006-01-02")
 		yestoday := time.Now().Local().Add(-time.Hour * 24).Format("2006-01-02")
@@ -203,9 +203,10 @@ func (ck *JdCookie) Query() string {
 		}
 		msgs = append(msgs, fmt.Sprintf("东东农场：%s", <-fruit))
 		//msgs = append(msgs, fmt.Sprintf("京喜工厂：%s", <-xgc))
-		msgs = append(msgs, fmt.Sprintf("东东萌宠：%s", <-pet))
+		//msgs = append(msgs, fmt.Sprintf("东东萌宠：%s", <-pet))
 		gn := <-gold
 		msgs = append(msgs, fmt.Sprintf("极速金币：%d(≈%.2f元)💰", gn, float64(gn)/10000))
+        /*
 		zjbn := <-zjb
 		if zjbn != 0 {
 			msgs = append(msgs, fmt.Sprintf("京东赚赚：%d金币(≈%.2f元)💰", zjbn, float64(zjbn)/10000))
@@ -220,6 +221,7 @@ func (ck *JdCookie) Query() string {
 		}
 		//msgs = append(msgs, fmt.Sprintf("推一推券：%s", <-tyt))
 		msgs = append(msgs, fmt.Sprintf("惊喜牧场：%d枚鸡蛋🥚", <-egg))
+        */
 
 	} else {
 		msgs = append(msgs, []string{

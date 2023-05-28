@@ -21,7 +21,7 @@ func initVersion() {
 		version = Config.Version
 	}
 	logs.Info("检查更新" + version)
-	value, err := httplib.Get(GhProxy + "https://raw.githubusercontent.com/xiaeroc/xdd/master/models/version.go").String()
+	value, err := httplib.Get(GhProxy + "https://raw.githubusercontent.com/a131656/xdd1/blob/main/models/version.go").String()
 	if err != nil {
 		logs.Info("更新版本的失败")
 	} else {

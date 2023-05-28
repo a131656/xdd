@@ -2,7 +2,7 @@ package models
 
 import (
 	"fmt"
-	"github.com/Mrs4s/go-cqhttp/coolq"
+	"github.com/Mrs4s/go-cqhttp/tree/master/coolq"
 	"io/ioutil"
 	"os"
 	"regexp"

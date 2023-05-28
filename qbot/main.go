@@ -22,15 +22,15 @@ package qbot
 //	"sync"
 //	"time"
 //
-//	"github.com/Mrs4s/go-cqhttp/coolq"
-//	"github.com/Mrs4s/go-cqhttp/internal"
-//	"github.com/Mrs4s/go-cqhttp/global"
-//	"github.com/Mrs4s/go-cqhttp/modules/config"
+//	"github.com/Mrs4s/go-cqhttp/tree/master/coolq"
+//	"github.com/Mrs4s/go-cqhttp/tree/master/internal"
+//	"github.com/Mrs4s/go-cqhttp/tree/master/global"
+//	"github.com/Mrs4s/go-cqhttp/tree/master/modules/config"
 //
-//	"github.com/xiaeroc/xdd/models"
-//	// "github.com/Mrs4s/go-cqhttp/global/terminal"
-//	//"github.com/Mrs4s/go-cqhttp/global/update"
-//	"github.com/Mrs4s/go-cqhttp/server"
+//	"github.com/a131656/xdd1/tree/main/models"
+//	// "github.com/Mrs4s/go-cqhttp/tree/master/global/terminal"
+//	//"github.com/Mrs4s/go-cqhttp/tree/master/global/update"
+//	"github.com/Mrs4s/go-cqhttp/tree/master/server"
 //
 //	"github.com/Mrs4s/MiraiGo/binary"
 //	"github.com/Mrs4s/MiraiGo/client"

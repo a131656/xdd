@@ -1,13 +1,13 @@
-module github.com/xiaeroc/xdd
+module github.com/a131656/xdd1
 
 go 1.17
 
-replace github.com/willf/bitset v1.2.0 => github.com/bits-and-blooms/bitset v1.2.0
+replace github.com/willf/bitset v1.7.0 => github.com/bits-and-blooms/bitset v1.7.0
 
-replace github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2 => github.com/xiaeroc/go-cqhttp v1.0.0-xiaeroc
+replace github.com/Mrs4s/go-cqhttp v1.0.1 => github.com/xiaeroc/go-cqhttp v1.0.3-xiaeroc
 
 require (
-	github.com/Mrs4s/go-cqhttp v1.0.0-beta8-fix2
+	github.com/Mrs4s/go-cqhttp v1.0.1
 	github.com/beego/beego/v2 v2.0.1
 	github.com/buger/jsonparser v1.1.1
 	github.com/go-playground/locales v0.13.0
